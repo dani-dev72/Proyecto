@@ -44,7 +44,10 @@ body {
 
 /* Tabla de control */
 .tabla_Control {
-    width: 70%;
+    flex-direction: row;
+    display: flex;
+    justify-content: right;
+    width: 80%;
     max-width: 700px;
     background-color: #d3d3d3;
     border: 3px solid #333;
@@ -54,7 +57,7 @@ body {
 
 /* Tabla interna Moldes en Uso */
 .tabla_MoldesUso {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     text-align: center;
 }
@@ -72,10 +75,14 @@ body {
 /* Celdas de la tabla principal */
 .contenedor {
     background-color: beige;
-    width: 150px;
-    height: 80px;
+    width: 120px;
+    height: 75px;
     text-align: center;
 }
+
+.contenedor.highlight{
+        background-color: #002aff7b;
+    }
 
 /* Fichas */
 .FichaMolde1 {

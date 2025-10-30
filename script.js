@@ -2,6 +2,18 @@ const ficha1 = document.getElementById('Ficha1')
 const contenedor = document.querySelectorAll('.contenedor')
 const pInfo = document.getElementById('info')
 
+//eventos
+
+// ficha1.addEventListener('drag',dragging)
+
+//funciones
+
+// function dragging(){
+//   console.log("Ficha siendo arrastrada")
+// }
+
+
+
 let FichaMolde1
 let fichaSeleccionada = null;
 
@@ -49,7 +61,15 @@ function dragLeave(e){
 
 function dragDrop(e){
     console.log(`Ficha ha sido soltado en ${e.target.classList}`)
-    e.target.appendChild(FichaMolde1)
+    // e.target.appendChild(FichaMolde1)
+    
+    if (FichaMolde1 instanceof Node) {
+        e.target.appendChild(FichaMolde1);
+      } else {
+        console.error("FichaMolde1 no es un nodo válido:", FichaMolde1);
+      }
+      console.log("FichaMolde1:", FichaMolde1, "Es nodo:", FichaMolde1 instanceof Node);
+
     e.target.classList.remove('highlight')
 }
 
