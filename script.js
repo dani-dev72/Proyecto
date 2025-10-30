@@ -65,6 +65,7 @@ function dragDrop(e){
     
     if (FichaMolde1 instanceof Node) {
         e.target.appendChild(FichaMolde1);
+        e.target.classList.remove('highlight')
       } else {
         console.error("FichaMolde1 no es un nodo válido:", FichaMolde1);
       }

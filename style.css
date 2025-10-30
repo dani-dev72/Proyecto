@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+h1{
+    background-color: #8599fd7b;
+}
 /* Fondo general */
 body {
     background-color: #e0e0e0; /* gris claro */
@@ -78,6 +81,7 @@ body {
     width: 120px;
     height: 75px;
     text-align: center;
+    
 }
 
 .contenedor.highlight{
