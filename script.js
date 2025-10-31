@@ -153,3 +153,13 @@ function confirmarDrop() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("nameInput").value = "";
   }
+
+  ficha1.addEventListener('click', function(event){
+    console.log(`Click en ficha ${FichaMolde1.id}`)
+
+  })
+
+// const miElemento = document.getElementById('remover');
+// const miPadre = miElemento.parentElement;
+// if(document.getElementById('Ficha1'))
+// miPadre.removeChild(miElemento);
