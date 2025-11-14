@@ -879,8 +879,43 @@
                     <td class="contenedor"></td>
                     <td class="contenedor"></td>
                 </tr>
-                <!-- <tr>
-                    <th>MI - 001</th>
+                <tr>
+                    <th>MANTENIMIENTO</th>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
+                    <td class="contenedor"></td>
                     <td class="contenedor"></td>
                     <td class="contenedor"></td>
                     <td class="contenedor"></td>
@@ -895,91 +930,6 @@
                     <td class="contenedor"></td>
                     <td class="contenedor"></td>
                 </tr>
-                <tr>
-                    <th>MI - 002</th>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                </tr>
-                <tr>
-                    <th>MI - 003</th>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                    <td class="contenedor"></td>
-                </tr> -->
-                <!--                 
-                <tr>
-                    <th>HORA/MAQUINA</th>
-                    <th>14:00</th>
-                    <th>14:30</th>
-                    <th>15:00</th>
-                    <th>15:30</th>
-                    <th>16:00</th>
-                    <th>16:30</th>
-                    <th>17:00</th>
-                    <th>17:30</th>
-                    <th>18:00</th>
-                    <th>18:30</th>
-                    <th>19:00</th>
-                    <th>19:30</th>
-                    <th>20:00</th>
-                    <th>20:30</th>
-                    <th>21:00</th>
-                    <th>21:30</th>
-                    <th>22:00</th>
-                    <th>22:30</th>
-                    <th>23:00</th>
-                    <th>23:30</th>
-                    <th>00:00</th>
-                    <th>00:30</th>
-                    <th>01:00</th>
-                    <th>01:30</th>
-                    <th>02:00</th>
-                    <th>02:30</th>
-                    <th>03:00</th>
-                    <th>03:30</th>
-                    <th>04:00</th>
-                    <th>04:30</th>
-                    <th>05:00</th>
-                    <th>05:30</th>
-                    <th>06:00</th>
-                    <th>06:30</th>
-                    <th>07:00</th>
-                    <th>07:30</th>
-                    <th>08:00</th>
-                    <th>08:30</th>
-                    <th>09:00</th>
-                    <th>09:30</th>
-                    <th>10:00</th>
-                    <th>10:30</th>
-                    <th>11:00</th>
-                    <th>11:30</th>
-                    <th>12:00</th>
-                    <th>12:30</th>
-                    <th>13:00</th>
-                    <th>13:30</th>
-                </tr>
-                 -->
 
                 <!-- <tr>
                     <th>800 TON</th>
@@ -992,8 +942,40 @@
             </table>
         </div>
 
+        <p id="info"></p>
+
         <div class="tabla_Control">
-            <table border="1" class="tabla_descarte">
+            <div class="cuadro_Matriceria">MATRICERIA
+                <span class="contenedor" >
+            </div> 
+
+
+            <div id="overlay" style="display:none;"></div>
+            <div id="modal" style="display:none;">
+
+                <label>Nombre:</label>
+                <input id="nameInput" type="text"/>
+                <label>Color:</label>
+                <select id="colorSelect">
+                    <option value="greenyellow">Verde</option>
+                    <option value="red">Rojo</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+                <button onclick="confirmarDrop()">Confirmar</button>
+                <button onclick="cancelarDrop()">Cancelar</button>
+
+                <div class="MenuBotones">
+                    <button class="boton" id="Eliminar_Ficha"><i class="bi bi-dot"></i>Eliminar Ficha</button>
+                    <!-- <h1></h1> -->
+                    <button class="boton" id="Cambiar_Color_Estado"><i class="bi bi-dot"></i>Cambiar Color/Estado</button>
+                    <!-- <h1></h1> -->
+                    <button class="boton" id="Agregar_Comentario"><i class="bi bi-dot"></i>Agregar Comentario</button>
+                    <!-- <h1></h1> -->
+                    <button class="boton" id="Agregar_Parada"><i class="bi bi-dot"></i>Agregar Parada</button>
+                    <!-- <h1></h1> -->
+                </div>
+             </div>
+            <!-- <table border="1" class="tabla_descarte">
                 <tr>
                     <th>
                         Descartar Ficha
@@ -1002,7 +984,8 @@
                 <td class="contenedor" id="remover">
 
                 </td>
-            </table>
+            </table> -->
+             
 
             <table border="1" class="tabla_MoldesUso">
             <tr>
@@ -1014,34 +997,22 @@
                     <h1>MO - </h1>
                 </div>
                 </td>
-                <td class="contenedor">
-                    <div class="FichaMolde1" draggable="true" id="Ficha1"> <!-- peonPiece y peon-->
+                <!-- <td class="contenedor">
+                    <div class="FichaMolde1" draggable="true" id="Ficha1"> 
                         <h1>MO - </h1>
                     </div>
-                </td>
-                <td class="contenedor">
-                    <div class="FichaMolde1" draggable="true" id="Ficha1"> <!-- peonPiece y peon-->
+                </td> -->
+                <!-- <td class="contenedor">
+                    <div class="FichaMolde1" draggable="true" id="Ficha1">
                         <h1>MO - </h1>
                     </div>
-                </td>
+                </td> -->
             </tr>
             </table>
         </div>
-        <p id="info"></p>
+        
 
-        <div id="overlay" style="display:none;"></div>
-        <div id="modal" style="display:none;">
-
-            <label>Nombre:</label>
-            <input id="nameInput" type="text"/>
-            <label>Color:</label>
-            <select id="colorSelect">
-                <option value="green">Verde</option>
-                <option value="red">Rojo</option>
-            </select>
-            <button onclick="confirmarDrop()">Confirmar</button>
-            <button onclick="cancelarDrop()">Cancelar</button>
-        </div>
+        
     </div>
 
     <script src="./script.js">
